@@ -1,0 +1,100 @@
+@import "./constant/styles/variables";
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./assets/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+      url('./assets/fonts/SFProDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./assets/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+      url('./assets/fonts/SFProDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./assets/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+      url('./assets/fonts/SFProDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #2F3138;
+  font-family: $font-family !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  cursor: pointer;
+  font-family: $font-family;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+span{
+  display: inline-block;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+ul{
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); 
+  clip: rect(1px, 1px, 1px, 1px); 
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
